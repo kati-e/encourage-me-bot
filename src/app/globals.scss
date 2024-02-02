@@ -28,7 +28,7 @@ h3 {
 .encourage-me-bot {
   @apply grid items-center min-h-[100vh] p-3;
   .page-inner {
-    @apply md:p-10 p-5 text-center max-w-[900px] mx-auto bg-light border-grey border-2 rounded-lg grid gap-2;
+    @apply md:p-10 p-5 text-center max-w-[900px] w-full mx-auto bg-light border-grey border-2 rounded-lg grid gap-2;
 
     svg {
       @apply w-full h-[3rem];

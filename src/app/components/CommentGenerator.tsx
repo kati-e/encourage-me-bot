@@ -23,12 +23,19 @@ export default function CommentGenerator() {
   return (
     <div className="bot">
       <div className="bot-inner">
-        {!error && <h3>An encouraging comment especially for you!</h3>}
-        {!loading && !error && comment == "" && (
-          <button onClick={fetchComment}>Cheer me up!</button>
+        {!error && (
+          <>
+            <h3>An encouraging comment especially for you!</h3>
+            {!loading && comment == "" && (
+              <button onClick={fetchComment}>Cheer me up!</button>
+            )}
+            {!loading ? (
+              <span className="comment">{comment}</span>
+            ) : (
+              <span>Loading...</span>
+            )}
+          </>
         )}
-        {loading && !error && <span>Loading...</span>}
-        {!loading && !error && <span className="comment">{comment}</span>}
         {error && (
           <span className="error">
             Sorry, too many requests for encouragement. I only take a few
