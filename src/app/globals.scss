@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply text-base text-dark font-sans;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-semibold;
+}
+
+h1 {
+  @apply text-3xl;
+}
+h2 {
+  @apply text-xl;
+}
+h3 {
+  @apply text-base;
+}
+
+.encourage-me-bot {
+  @apply grid items-center min-h-[100vh] p-3;
+  .page-inner {
+    @apply md:p-10 p-5 text-center max-w-[900px] mx-auto bg-light border-grey border-2 rounded-lg grid gap-2;
+
+    svg {
+      @apply w-full h-[3rem];
+    }
+
+    .bot {
+      @apply mt-5;
+
+      .bot-inner {
+        @apply grid gap-2;
+
+        button {
+          @apply bg-blue rounded-full text-light font-semibold py-3 px-5 w-fit mx-auto mt-5;
+        }
+
+        .comment {
+          @apply mt-5 italic;
+        }
+
+        .error {
+          @apply p-2 bg-red rounded-lg;
+        }
+      }
+    }
+  }
+}
