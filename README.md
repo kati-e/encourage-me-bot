@@ -9,7 +9,6 @@ A simple react app using the openAI api to give words of encouragement when the 
 3. You will need to sign up for an api key with openAI to use this. You can do that here: https://platform.openai.com/api-keys
 
 4. Once you have your api key you will need to create a .env file to keep it in. Like this:
-
 ``` NEXT_PUBLIC_OPENAI_API_KEY = {Your Key Here} ```
 
 Hope you enjoy it! \(^_^)/
